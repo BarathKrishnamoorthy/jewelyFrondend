@@ -16,9 +16,9 @@
                     </button>
                     <div x-show="dropdownOpen" @click.away="dropdownOpen = false"
                          class="absolute mt-2 py-2 w-40 bg-white border rounded shadow-xl z-20 flex flex-col space-y-2 items-center"> 
-                        <a href="{{ route('admin.slider') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">Slider</a>
-                        <a href="{{ route('admin.rate') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">Jewely Rate</a>
-                        <a href="{{ route('admin.showCase') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">ShowCase</a>
+                        <a href="{{ route('admin.slider') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">Slider</a>
+                        <a href="{{ route('admin.rate') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">Jewely Rate</a>
+                        <a href="{{ route('admin.showCase') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">ShowCase</a>
                     </div>
                 </div>
                 <a href="{{ route('contact.index') }}" class="text-inherit hover:text-purple-600 no-underline">Contact Us</a>
@@ -53,9 +53,9 @@
             </button>
             <div x-show="dropdown" @click.away="dropdown = false"
                  class="absolute left-0 mt-2 py-2 w-40 bg-white border rounded shadow-xl z-20 flex flex-col space-y-2 items-center">
-                <a href="{{ route('admin.slider') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">Slider</a>
-                <a href="{{ route('admin.rate') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">Jewely Rate</a>
-                <a href="{{ route('admin.showCase') }}" class="text-green-500 px-4 py-2 hover:bg-gray-100 no-underline">ShowCase</a>
+                <a href="{{ route('admin.slider') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">Slider</a>
+                <a href="{{ route('admin.rate') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">Jewely Rate</a>
+                <a href="{{ route('admin.showCase') }}" class="text-inherit px-4 py-2 hover:bg-gray-100 no-underline">ShowCase</a>
             </div>
         </div>
         <a href="{{ route('contact.index') }}" class="text-inherit hover:text-purple-600 no-underline">Contact Us</a>
