@@ -14,9 +14,9 @@
     </div>
 
     <div
-        class="overflow-x-auto bg-white dark:bg-gray-900 shadow-lg rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
-        <table id="contactTable" class="min-w-full divide-y divide-gray-300 dark:divide-gray-700 text-sm">
-            <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+        class="overflow-x-auto bg-white shadow-lg rounded-2xl border border-gray-200  p-6">
+        <table id="contactTable" class="min-w-full divide-y divide-gray-300  text-sm">
+            <thead class="bg-gray-100  text-gray-700 ">
                 <tr>
                     <th class="px-6 py-4 text-left font-semibold">S.No</th>
                     <th class="px-6 py-4 text-left font-semibold">Title</th>
@@ -26,13 +26,13 @@
                     <th class="px-6 py-4 text-center font-semibold">Action</th>
                 </tr>
             </thead>
-            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+            <tbody class="divide-y divide-gray-200 ">
                 @foreach ($showCase as $index => $rate)
-                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-800 transition duration-150">
+                    <tr class="hover:bg-gray-50">
                         <td class="px-6 py-4">{{ $index + 1 }}</td>
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $rate->title }}</td>
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $rate->subtitle }}</td>
-                        <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $rate->rate }}</td>
+                        <td class="px-6 py-4 font-medium text-gray-900">{{ $rate->title }}</td>
+                        <td class="px-6 py-4 font-medium text-gray-900 ">{{ $rate->subtitle }}</td>
+                        <td class="px-6 py-4 font-medium text-gray-900">{{ $rate->rate }}</td>
                         <td class="px-6 py-4">
                             @if ($rate->image)
                                 <div class="mb-2">
